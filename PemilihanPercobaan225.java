@@ -3,23 +3,27 @@ public class PemilihanPercobaan225 {
     
     public static void main(String[] args) {
         Scanner input25 = new Scanner(System.in);
+        double nilai;
         
-        System.out.println("Nilai uas  : ");
-        float uas = input25.nextFloat();
+        System.out.println("Masukkan nilai :");
+        nilai = input25.nextDouble();
         
-        System.out.println("Nilai uts  : ");
-        float uts = input25.nextFloat();
-        
-        System.out.println("Nilai kuis  : ");
-        float kuis = input25.nextFloat();
-        
-        System.out.println("Nilai tugas : ");
-        float tugas = input25.nextFloat();
+  
+   if (nilai > 80)  {
+    System.out.println("hasil nilainya adalah " +nilai+ " A");
+   }else if (nilai > 73){
+    System.out.println("hasil nilainya adalah " +nilai+ " B+");
+   }else if (nilai > 65){
+    System.out.println("hasil nilainya adalah " +nilai+ " B");
+   }else if (nilai > 60){
+    System.out.println("hasil nilainya adalah " +nilai+ " C+");
+   }else if (nilai > 50){
+    System.out.println("hasil nilainya adalah " +nilai+ " C");
+   }else if (nilai > 39){
+    System.out.println("hasil nilainya adalah " +nilai+  " D");
+   }else{
+    System.out.println("hasil nilainya adalah "+nilai+ " E");
+   }
 
-        float total = (uas * 0.4F) + (uts * 0.1F) + (kuis * 0.1F) + (tugas * 0.2F);
-        String message = total < 65 ? "Remidi" : "Tidak Remidi";
-
-        System.out.println("Nilai akhir = " +total+ " Sehingga " + message);
     } 
 }
-    
